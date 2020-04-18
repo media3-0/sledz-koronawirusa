@@ -3,18 +3,18 @@ import './CountryTile.scss';
 import React from 'react';
 
 export default ({
-  Country,
-  TotalConfirmed,
-  TotalDeaths,
-  TotalRecovered
+  Country = 0,
+  TotalConfirmed = 0,
+  TotalDeaths = 0,
+  TotalRecovered = 0
 }) => {
 
   return (
-    <div className="countryTile">
-      <div className="tile">{Country}</div>
-      <div className="tile">{TotalConfirmed}</div>
-      <div className="tile">{TotalDeaths}</div>
-      <div className="tile">{TotalRecovered}</div>
+    <div className={`countryTile ${TotalConfirmed === 0 && "greenBg"}`}>
+      <div className="tile">{Country.toLocaleString()}</div>
+      <div className="tile">{TotalConfirmed.toLocaleString()}</div>
+      <div className="tile">{TotalDeaths.toLocaleString()}</div>
+      <div className="tile totalRecovered">{TotalRecovered.toLocaleString()}</div>
     </div>
   )
 }

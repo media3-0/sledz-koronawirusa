@@ -1,0 +1,33 @@
+.summary {
+  width: 20%;
+  padding-top: 1em;
+
+  .sticky {
+    position: sticky;
+    top: 0;
+    padding-top: 2em;
+
+    .infoNumber {
+      padding: 0.2em;
+
+      .globalNumber {
+        font-size: 2em;
+        color: red;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .infectedCountries {
+      padding: 1em;
+
+      .infectedCountriesLabel {
+
+        color: black;
+        font-size: 0.8em;
+      }
+
+    }
+  }
+}
