@@ -4,8 +4,24 @@
   font-size: 1em;
   border-bottom: 1px solid beige;
   padding: 1em 0;
+  cursor: pointer;
+
+  &.greenBg {
+    background: rgba(143, 188, 143, 0.3);
+  }
+
+  &:hover {
+    background: aliceblue;
+  }
 
   .tile {
     width: 100%;
+
+    &.totalRecovered {
+      color: green;
+      font-weight: bold;
+
+    }
+
   }
 }

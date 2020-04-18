@@ -1,0 +1,27 @@
+@import '../CountryTile/CountryTile.scss';
+
+.countryTileHeader {
+  font-weight: bold;
+  font-size: 1.5em;
+  position: sticky;
+  top: 0;
+  background: cadetblue;
+  border-radius: 3px 3px 0 0;
+  padding: 0.5em 0;
+
+  &:hover {
+    background: cadetblue;
+  }
+
+  .country,
+  .confirmed,
+  .deaths,
+  .recovered {
+    padding: 0;
+  }
+
+  .recovered {
+    color: black;
+
+  }
+}
